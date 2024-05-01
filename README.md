@@ -13,3 +13,5 @@ Modern Frontend Tools and blogs
    
 2.Event Loop  
   https://www.explainthis.io/en/swe/js-event-loop-questions  
+    
+3.https://medium.com/@amsingh714/common-javascript-interview-question-describe-the-difference-between-var-vs-let-vs-const-8c18cf29208
