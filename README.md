@@ -4,7 +4,7 @@ Modern Frontend Tools and blogs
 ## Table of Contents
 
 
-## Blogs
+## Blogs  
 
 
 1. JWT Token Verification on backend [Security]
