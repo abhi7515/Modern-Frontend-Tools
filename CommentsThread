@@ -1,0 +1,66 @@
+import React from 'react';
+
+// Sample data
+const commentsData = [
+  {
+    id: 1,
+    author: 'Alice',
+    text: 'This is a great post!',
+    replies: [
+      {
+        id: 2,
+        author: 'Bob',
+        text: 'I totally agree with you, Alice.',
+        replies: [
+          {
+            id: 3,
+            author: 'Charlie',
+            text: 'Me too!',
+            replies: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    author: 'David',
+    text: 'Thanks for sharing this.',
+    replies: [],
+  },
+];
+
+// Comment component
+const Comment = ({ comment }) => {
+  return (
+    <div style={{ marginLeft: '20px', borderLeft: '1px solid #ccc', paddingLeft: '10px', marginTop: '10px' }}>
+      <p><strong>{comment.author}</strong>: {comment.text}</p>
+      {comment.replies && comment.replies.length > 0 && (
+        <CommentList comments={comment.replies} />
+      )}
+    </div>
+  );
+};
+
+// CommentList component
+const CommentList = ({ comments }) => {
+  return (
+    <div>
+      {comments.map((comment) => (
+        <Comment key={comment.id} comment={comment} />
+      ))}
+    </div>
+  );
+};
+
+// Main App component
+const App = () => {
+  return (
+    <div>
+      <h1>Comments</h1>
+      <CommentList comments={commentsData} />
+    </div>
+  );
+};
+
+export default App;
