@@ -19,4 +19,4 @@ Modern Frontend Tools and blogs
 4. HLD => https://www.youtube.com/watch?v=gjVYRl167RQ&list=PL6W8uoQQ2c63W58rpNFDwdrBnq5G3EfT7&index=27  
 5. Design Tiktok https://www.youtube.com/watch?v=NHqdG-aZxOk, Design Spotify https://www.youtube.com/watch?v=_K-eupuDVEc  
 6. MVC https://leetcode.com/discuss/interview-question/246734/given-html-and-css-files-and-a-browser-which-is-for-m-v-and-c-in-mvc-design-pattern  
-7. 
+7. Machine Coding https://bigfrontend.dev/
