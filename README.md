@@ -21,4 +21,6 @@ Modern Frontend Tools and blogs
 6. MVC https://leetcode.com/discuss/interview-question/246734/given-html-and-css-files-and-a-browser-which-is-for-m-v-and-c-in-mvc-design-pattern  
 7. Machine Coding https://bigfrontend.dev/  
 8. LLD Questions https://leetcode.com/discuss/interview-question/system-design/5328221/Frequently-Asked-Low-Level-Design-(LLD)-Questions  
+9. js and frontend system design fundamantals https://levelup.gitconnected.com/frontend-interview-preparation-00bf95116b5e  
+10. 
 
