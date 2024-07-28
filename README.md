@@ -6,7 +6,6 @@ Modern Frontend Tools and blogs
 
 ## Blogs  
 
-
 1. JWT Token Verification on backend [Security]
 	https://stackoverflow.com/questions/27301557/if-you-can-decode-jwt-how-are-they-secure
         https://www.fastly.com/documentation/solutions/tutorials/jwt/  
