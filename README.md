@@ -22,5 +22,6 @@ Modern Frontend Tools and blogs
 8. LLD Questions https://leetcode.com/discuss/interview-question/system-design/5328221/Frequently-Asked-Low-Level-Design-(LLD)-Questions  
 9. js and frontend system design fundamantals https://levelup.gitconnected.com/frontend-interview-preparation-00bf95116b5e  
 10. Everyting about promises https://levelup.gitconnected.com/vimp-javascript-promise-implementation-challenges-5a4f120d8606  
+11. Frontend System Design https://www.youtube.com/watch?v=NEzu4FD25KM/https://www.youtube.com/watch?v=QemIfzcEeMM
 
 
