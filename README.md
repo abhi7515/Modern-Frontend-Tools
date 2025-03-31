@@ -24,6 +24,7 @@ Modern Frontend Tools and blogs
 10. Everyting about promises https://levelup.gitconnected.com/vimp-javascript-promise-implementation-challenges-5a4f120d8606  
 11. Frontend System Design https://www.youtube.com/watch?v=NEzu4FD25KM/ https://www.youtube.com/watch?v=QemIfzcEeMM/ https://www.youtube.com/watch?v=5vyKhm2NTfw&list=PLI9W87-Dqn7j_x6QtR6sUjycJR7nQLBqT/ https://www.youtube.com/watch?v=_HjRSHeQ92k  
 12: https://github.com/doocs/leetcode/blob/main/solution/2800-2899/2821.Delay%20the%20Resolution%20of%20Each%20Promise/README_EN.md  simulate delay
+13: cached api call with expiry time of each key https://learnersbucket.com/examples/interview/cached-api-call-with-expiry-time/
 
 
 
