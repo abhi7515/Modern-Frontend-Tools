@@ -1,0 +1,25 @@
+# Immutable Updates : Safe array operations (slice instead of splice)
+
+# ❌ Mutating the array (bad)
+const arr = [1, 2, 3];
+arr.splice(1, 1);  // Removes 1 item at index 1
+console.log(arr); // [1, 3] -> original array is changed
+
+#✅ Immutable update (good):
+const arr = [1, 2, 3];
+const newArr = [...arr.slice(0, 1), ...arr.slice(2)];
+console.log(newArr); // [1, 3] -> original array unchanged
+
+
+function removeAtIndex(array, index) {
+  return [...array.slice(0, index), ...array.slice(index + 1)];
+}
+
+const arr = [1, 2, 3];
+const updatedArr = removeAtIndex(arr, 1);
+
+console.log(updatedArr); // [1, 3]
+console.log(arr); // [1, 2, 3] — still intact
+
+
+
