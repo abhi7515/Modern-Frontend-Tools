@@ -27,6 +27,7 @@ Modern Frontend Tools and blogs
 13: cached api call with expiry time of each key https://learnersbucket.com/examples/interview/cached-api-call-with-expiry-time/  
 14: Frontend System Design https://frontendmastery.com/posts/frontend-system-design-interview-guide/  
 15: practice FE (https://www.greatfrontend.com/) and https://bigfrontend.dev/problem
+16: Web performance https://web.dev/performance
 
 
 
