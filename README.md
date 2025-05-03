@@ -28,6 +28,9 @@ Modern Frontend Tools and blogs
 14: Frontend System Design https://frontendmastery.com/posts/frontend-system-design-interview-guide/  
 15: practice FE (https://www.greatfrontend.com/) and https://bigfrontend.dev/problem
 16: Web performance https://web.dev/performance
+17: The RADIO framework and SOLID principles https://www.greatfrontend.com/front-end-system-design-playbook/framework  
+18: Service workers and http caching https://web.dev/articles/service-worker-caching-and-http-caching  
+19: Advance React component composition https://frontendmastery.com/posts/advanced-react-component-composition-guide/
 
 
 
