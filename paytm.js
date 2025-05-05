@@ -12,3 +12,4 @@ Paytm Interview Experience
 10 Component lifecycle in React Functional Component, what is cleanup function when is it called, what are impacts in it if dependency array is modified.
 11 Event Capturing vs bubbling
 12  What are generater functions
+13 Explain Component lifecycle in functional component with focus on how if useEffect cleanup called. What are the effects on cleanup with change in dependency array. 
