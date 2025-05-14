@@ -196,3 +196,29 @@ const styles = {
   },
 };
 
+
+// React state updates are asynchronous and may be batched. If you do this:
+
+// js
+// Copy
+// Edit
+// setSelectedRows(toggleSetValue(prev, i)); // ❌
+// You're assuming prev is the latest state — but it isn't in scope, and even if it were, it might be stale.
+
+// Instead, do this:
+
+// js
+// Copy
+// Edit
+// setSelectedRows(prev => toggleSetValue(prev, i)); // ✅
+// This tells React:
+
+// “Give me the most up-to-date value of selectedRows, and I’ll return the next state based on it.”
+
+// 🔁 Analogy:
+// Think of it like making changes in a shared Google Doc:
+
+// If everyone edits their own cached copy, they overwrite each other.
+
+// If everyone makes edits based on the latest version, the document stays accurate.
+
