@@ -31,6 +31,8 @@ Modern Frontend Tools and blogs
 17: The RADIO framework and SOLID principles https://www.greatfrontend.com/front-end-system-design-playbook/framework  
 18: Service workers and http caching https://web.dev/articles/service-worker-caching-and-http-caching  
 19: Advance React component composition https://frontendmastery.com/posts/advanced-react-component-composition-guide/
+20: Practise system design and machine cofing https://github.com/greatfrontend/awesome-front-end-system-design, https://www.greatfrontend.com/  
+21: Learn Drawing on draw.io or excail draw
 
 
 
