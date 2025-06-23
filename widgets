@@ -1,0 +1,5 @@
+ Given a design-based question to implement a dashboard application with multiple widgets.
+
+⏲️ Each widget should refresh automatically after some time and also individually on the click of a button.
+
+❓ Asked questions about how the data would flow and how I would manage my components.
