@@ -6,6 +6,7 @@ Modern Frontend Tools and blogs
 
 ## Blogs  
 
+
 1. JWT Token Verification on backend [Security]
 	https://stackoverflow.com/questions/27301557/if-you-can-decode-jwt-how-are-they-secure
         https://www.fastly.com/documentation/solutions/tutorials/jwt/  
@@ -33,6 +34,7 @@ Modern Frontend Tools and blogs
 19: Advance React component composition https://frontendmastery.com/posts/advanced-react-component-composition-guide/
 20: Practise system design and machine cofing https://github.com/greatfrontend/awesome-front-end-system-design, https://www.greatfrontend.com/  
 21: Learn Drawing on draw.io or excail draw
+22: https://alpha.learnersbucket.com/course/frontend-system-design/lzt_5levcwgdpi_mkczwx
 
 
 
