@@ -49,3 +49,30 @@ Function.prototype.callPolyfill = function(context, ...args) {
 
   return context.fn(...args);
 }
+
+########################################
+
+Object.defineProperties(obj, {
+  name: {
+    value: 'Alice',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  age: {
+    value: 30,
+    writable: false, // Read-only
+    enumerable: true,
+    configurable: false
+  },
+  greeting: {
+    get() {
+      return `Hello, my name is ${this.name}`;
+    },
+    set(value) {
+      this.name = value;
+    },
+    enumerable: true,
+    configurable: true
+  }
+});
