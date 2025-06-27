@@ -1,3 +1,41 @@
+// BETTER APPROACH - using a more explicit tracking mechanism
+const runWithConcurrencyLimitBetter = async (tasks, concLimit) => {
+  const results = Array(tasks.length);
+  const executing = new Set();
+  
+  for (let i = 0; i < tasks.length; i++) {
+    // Create wrapper that removes itself when done
+    const promise = tasks[i]()
+      .then(result => {
+        results[i] = { status: 'fulfilled', value: result };
+      })
+      .catch(error => {
+        results[i] = { status: 'rejected', reason: error };
+      })
+      .finally(() => {
+        executing.delete(promise); // Remove self when done
+      });
+    
+    executing.add(promise);
+    
+    // If we've hit the limit, wait for any one to finish
+    if (executing.size >= concLimit) {
+      await Promise.race([...executing]);
+    }
+  }
+  
+  // Wait for all remaining tasks
+  await Promise.all([...executing]);
+  return results;
+};
+
+console.log("=== Testing Better Implementation ===");
+runWithConcurrencyLimitBetter(tasks, 2).then((results) => {
+  console.log("Results:", results);
+});
+
+
+------------------------------------------------------------------------------------
 function createTask(id, delay) {
   return () =>
     new Promise((resolve) => {
