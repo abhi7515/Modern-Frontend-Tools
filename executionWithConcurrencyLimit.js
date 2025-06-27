@@ -39,3 +39,53 @@ const runWithConcurrencyLimit = async (taskFns, limit) => {
 runWithConcurrencyLimit(tasks, 2).then((results) => {
   console.log("All tasks completed:", results);
 });
+
+
+
+############################################################
+
+function createTask(id, delay) {
+  return () =>
+    new Promise((resolve) => {
+      console.log(`Task ${id} started`);
+      setTimeout(() => {
+        console.log(`Task ${id} finished`);
+        resolve(`Result ${id}`);
+      }, delay);
+    });
+}
+
+const tasks = [
+  createTask(1, 3000),
+  createTask(2, 2000),
+  createTask(3, 1000),
+  createTask(4, 500),
+  createTask(5, 1500)
+];
+
+const runWithConcurrencyLimit = async (tasks, concLimit) => {
+  const results = [];
+  
+  for (let i = 0; i < tasks.length; i += concLimit) {
+    // Get the current batch of tasks
+    const batch = tasks.slice(i, i + concLimit);
+    
+    // Execute the task functions to get promises
+    const promises = batch.map(taskFn => taskFn());
+    
+    // Wait for all tasks in this batch to complete
+    const batchResults = await Promise.allSettled(promises);
+    
+    // Add results to the main results array
+    results.push(...batchResults);
+  }
+  
+  return results;
+}
+
+// Usage
+runWithConcurrencyLimit(tasks, 2).then((results) => {
+  console.log("All tasks completed:", results);
+}).catch(err => {
+  console.error("Error:", err);
+});
