@@ -44,6 +44,12 @@ runWithConcurrencyLimit(tasks, 2).then((results) => {
 
 ############################################################
 
+This implementation waits for a full batch to finish before moving on.
+
+That means even if Task 2 finishes in 2s, Task 3 won’t start until Task 1 (3s) is done.
+
+If your goal is maximum throughput, consider the above pool-based approach , where tasks start as soon as a slot frees up.
+
 function createTask(id, delay) {
   return () =>
     new Promise((resolve) => {
