@@ -45,5 +45,18 @@ It's undefined in strict mode (or the global object in non-strict mode)
 Unless you explicitly call it with context (person.getName()), or bind it, this will not refer to person
 
 
+var obj1 = {
+    address : "Mumbai,India",
+    getAddress: function(){
+    console.log(this.address); 
+  }
+}
+   
+var getAddress = obj1.getAddress;
+var obj2 = {name:"akshay"};
+obj2.getAddress();   
+ // Uncaught TypeError: obj2.getAddress is not a function"
+
+
 
 
