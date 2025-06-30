@@ -37,6 +37,8 @@ Modern Frontend Tools and blogs
 22: https://alpha.learnersbucket.com/course/frontend-system-design/lzt_5levcwgdpi_mkczwx
 23: Build react-virtualized https://www.youtube.com/watch?v=5jiTVkTkPlw&list=PL4ruoTJ8LTT9ERQUWUG3bdySYz3FldFPJ || https://www.youtube.com/watch?v=T3b5khnxYQg
 24: Draw here https://excalidraw.com/#json=VdUTFg_HmKlD7K_8TbhH9,RqAhA0Ax07mrtzzuGRkkCw
+25: System Design LLD: https://www.youtube.com/watch?v=5vyKhm2NTfw&list=PLI9W87-Dqn7j_x6QtR6sUjycJR7nQLBqT, https://github.com/ghoshsuman845/frontend-interview-preparation-kit   
+
 
 
 
