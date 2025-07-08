@@ -74,3 +74,70 @@ export default Autocomplete = () => {
     </div>
   );
 };
+
+
+--------------------------------------------------------------------
+
+  .App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.search-container {
+  width: 300px;
+  margin: 0px auto;
+  position: relative;
+}
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 10px 36px 10px 12px; /* Leave room for clear button */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.results-list {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: auto;
+}
+
+.results-options {
+  padding: 10px 12px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: auto;
+}
+
+.results-options:hover {
+  background-color: #f5f;
+}
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+  line-height: 1;
+}
+
