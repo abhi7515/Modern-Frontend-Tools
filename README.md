@@ -38,7 +38,8 @@ Modern Frontend Tools and blogs
 23: Build react-virtualized https://www.youtube.com/watch?v=5jiTVkTkPlw&list=PL4ruoTJ8LTT9ERQUWUG3bdySYz3FldFPJ || https://www.youtube.com/watch?v=T3b5khnxYQg   
 24: Draw here https://excalidraw.com/#json=VdUTFg_HmKlD7K_8TbhH9,RqAhA0Ax07mrtzzuGRkkCw   
 25: System Design LLD: https://www.youtube.com/watch?v=5vyKhm2NTfw&list=PLI9W87-Dqn7j_x6QtR6sUjycJR7nQLBqT, https://github.com/ghoshsuman845/frontend-interview-preparation-kit   
-26: custom redux store https://singhsourav206.medium.com/approach-to-build-our-own-redux-store-7d48a4fa089b   
+26: custom redux store https://singhsourav206.medium.com/approach-to-build-our-own-redux-store-7d48a4fa089b
+27: some js dsa questions https://www.youtube.com/watch?v=ElHeF2zY570&list=PLdDT54c2vNM7AHSDhX3_hnki1BfzT59xF   
 
 
 
