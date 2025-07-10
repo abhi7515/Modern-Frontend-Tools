@@ -7,15 +7,15 @@ export default function App() {
   const trafficConfig = [
     {
       color: "red",
-      duration: 30000,
+      duration: 1000,
     },
     {
       color: "yellow",
-      duration: 30000,
+      duration: 5000,
     },
     {
       color: "green",
-      duration: 30000,
+      duration: 2000,
     },
   ];
 
@@ -28,12 +28,13 @@ export default function App() {
           return 0;
         }
       });
-    }, 30000);
-  }, []);
+    }, trafficConfig[currentIndex].duration);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
     <div className="App">
-      {console.log("index", currentIndex)}
       {trafficConfig.map((light, idx) => (
         <div
           style={{
