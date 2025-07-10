@@ -48,3 +48,29 @@ export default function App() {
     </div>
   );
 }
+
+
+
+
+
+---------------------------------------------------
+
+  .App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.traffic-light {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: white;
+}
