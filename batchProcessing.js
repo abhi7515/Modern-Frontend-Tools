@@ -51,3 +51,52 @@ function mockFetch(url) {
 
 batchCall(urls, mockFetch).then(console.log);
 
+
+
+
+
+
+
+----------------------------------------------------------------------------------
+
+classic concurrency-limited task runner
+
+async function batchCall(urls, fetchFn, limit) {
+  const result = new Array(urls.length);
+  let i = 0;
+
+  // Runner function - will keep starting new tasks
+  async function runner() {
+    while (i < urls.length) {
+      const currentIndex = i++;
+      try {
+        const res = await fetchFn(urls[currentIndex]);
+        result[currentIndex] = res;
+      } catch (err) {
+        result[currentIndex] = err; // optionally handle errors
+      }
+    }
+  }
+
+  // Start `limit` parallel runners
+  const workers = [];
+  for (let j = 0; j < limit; j++) {
+    workers.push(runner());
+  }
+
+  await Promise.all(workers);
+  return result;
+}
+
+
+function mockFetch(url) {
+  return new Promise((resolve) => {
+    const delay = Math.random() * 1000; // simulate variable API delay
+    setTimeout(() => resolve(`Fetched ${url}`), delay);
+  });
+}
+
+const urls = Array.from({ length: 10 }, (_, i) => `url/${i + 1}`);
+
+batchCall(urls, mockFetch, 5).then(console.log);
+
