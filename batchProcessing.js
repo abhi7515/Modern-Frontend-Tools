@@ -1,4 +1,4 @@
-batch of size x, it means only x request can be sent in a second so deliberately simulate a delay of 1 second 
+// batch of size x, it means only x request can be sent in a second so deliberately simulate a delay of 1 second 
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
