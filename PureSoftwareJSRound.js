@@ -5,6 +5,9 @@
 #Chunk splitting using webpack in a html, css and js project, how to start optimizing with async/defer and preload, prefetch and preconnect.
 #Google.com request flow with focus on browser rendering and js engine and rendering engine.
 #How to secure JWT in a web application
+#Advantages of Semantic Tags
+#How to improve LCP and accessibility
+#How to improve SEO using metatags and Next.js
 
 
 
