@@ -1,3 +1,7 @@
+
+//TDZ is accessing a variable let or const its local scope before its initialization. const must also be decleared at initialization.
+
+
 let a = a; // ❌ ReferenceError (accessing itself in TDZ)
 
 function foo(x = y, y = 2) {
