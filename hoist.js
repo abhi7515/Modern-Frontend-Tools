@@ -1,6 +1,16 @@
 
 //TDZ is accessing a variable let or const its local scope before its initialization. const must also be decleared at initialization.
+//shadowing Shadowing happens when a variable declared in an inner scope (block/function) has the same name as one in an outer scope.
+//The inner variable “shadows” the outer one.
+//Inside that scope, the outer variable is inaccessible.
+//more at bottom
 
+
+Inside that scope, the outer variable is inaccessible.
+
+The inner variable “shadows” the outer one.
+
+Inside that scope, the outer variable is inaccessible.
 
 let a = a; // ❌ ReferenceError (accessing itself in TDZ)
 
@@ -42,6 +52,8 @@ bar(); // ❌ TypeError: bar is not a function
 var bar = function() { console.log("hi"); };
 
 -----------------------------------------------------------------------
+
+#shadowing
 
   
 
