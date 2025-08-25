@@ -35,6 +35,25 @@ export default function App() {
     return () => observer.disconnect();
   }, [fetchProducts]);
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const { scrollTop, clientHeight, scrollHeight } =
+  //       document.documentElement;
+
+  //     // When the user is close to bottom (100px threshold)
+  //     if (scrollTop + clientHeight >= scrollHeight - 100 && !isLoading) {
+  //       fetchProducts();
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [isLoading, products.length, total, currentIndex]);
+
+
   return (
     <div style={styles.container}>
       {products.map(product => (
