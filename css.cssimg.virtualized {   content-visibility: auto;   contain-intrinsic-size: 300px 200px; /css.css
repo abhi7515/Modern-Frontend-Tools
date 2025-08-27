@@ -1,0 +1,32 @@
+img.virtualized {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px 200px; /* Reserve space */
+}
+content-visibility: auto; → tells the browser to skip rendering the element until it’s near the viewport (like lazy rendering).
+
+contain-intrinsic-size → gives a fallback size so the layout doesn’t collapse before the image actually renders.
+
+Without this, the browser doesn’t know the element’s dimensions and you might get layout shifts (CLS).
+
+Best practices for images
+
+Always set width/height (or aspect-ratio) explicitly → avoids reflow.
+
+img.virtualized {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  content-visibility: auto;
+  contain-intrinsic-size: 400px 225px; /* matches aspect ratio */
+}
+Combine with loading="lazy" → reduces network usage.
+<img 
+  src="photo.jpg" 
+  loading="lazy" 
+  class="virtualized"
+  width="800" height="600"
+/>
+
+content-visibility hides the element’s children from accessibility APIs until rendered → don’t use on important above-the-fold images.
+
+If you don’t provide intrinsic size (contain-intrinsic-size or width/height), you’ll see layout jumps.
