@@ -74,3 +74,74 @@ export default function App() {
   border-radius: 50%;
   background-color: white;
 }
+
+---------------------------------------------------------------------Feb 4, 2026--------------------------------------------------------------------
+
+
+import "./styles.css";
+import {useState, useEffect, useMemo} from 'react';
+
+export default function App() {
+  const [current, setCurrent] = useState(0);
+  const lights = useMemo(() => [
+    { color: 'red', duration: 4000 },
+    { color: 'yellow', duration: 500 },
+    { color: 'green', duration: 3000 }
+  ], []);
+  useEffect(() => {
+    const timer  = setTimeout(() =>  {
+      setCurrent(current => (current+1)%lights.length )
+    }, lights[current].duration)
+    return () => clearTimeout(timer);
+  }, [current, lights])
+  return (
+    <div className="App">
+      <div className="container">
+    {lights.map((light, index) => (
+      <div key={light} className="light" style={{"background": light?.color, "opacity":(current === index?'1':'0.35')}}>
+
+      </div>
+    ))  }
+      </div>
+    </div>
+  );
+}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container{
+  background: black;
+  height: 600px;
+  width: 250px;
+}
+.light{
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  opacity: 0.35;
+  margin: auto;
+}
+
+Duration: 12 minutes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
